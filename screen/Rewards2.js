@@ -8,6 +8,7 @@ export default function Rewards2() {
   const [shouldShow, setShouldShow] = useState(true);
   const navigation = useNavigation();
   return(
+    //added an image of product named img3
     <View style={styles.container}>
       <View style={styles.points}>
         <Image
@@ -17,8 +18,11 @@ export default function Rewards2() {
       <LinearGradient
        colors={['#9074B0', '#78599C']}
        style={[styles.offers]}>
-
       </LinearGradient>
+      <Image
+        source={require('../assets/product1.png')}
+        style={styles.img3}
+        ></Image>
      
       
       
@@ -72,7 +76,7 @@ export default function Rewards2() {
  const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#8E6FB2', 
+        backgroundColor: '#342802',   //changed the color
         alignItems: 'center',
     },
     points: {
@@ -98,6 +102,12 @@ export default function Rewards2() {
         top:110,
         borderRadius: 20
 
+    }, 
+    //image of product style
+    img3: {
+      height: 150,
+        width: 280,
+        top:110,  
     },
     walletText: {
         position:'absolute',
@@ -110,7 +120,7 @@ export default function Rewards2() {
     copoun1: {
       width:380,
       height: 170,
-      backgroundColor:'#9074B0' ,
+      backgroundColor:'#ffffff' ,  //changed color
       opacity:0.8,
       borderRadius:20,
       top: 170 ,
@@ -132,7 +142,7 @@ export default function Rewards2() {
     copoun2: {
       width:380,
       height: 170,
-      backgroundColor:'#9074B0',
+      backgroundColor:'#ffffff',  //changed color
       opacity:0.8,
       borderRadius:20,
       top: 200 ,
