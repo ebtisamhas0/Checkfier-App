@@ -12,7 +12,7 @@ export default function Signup() {
   
    const submitData = ()=>{
     setIsLoading(true)
-    fetch("http://da2b-95-187-176-133.ngrok.io/send-data",{
+    fetch("http://a423-151-255-138-72.ngrok.io/send-data",{
       method:"POST",
       headers:{
         'Content-Type' :'application/json'

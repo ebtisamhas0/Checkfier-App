@@ -11,7 +11,7 @@ export default function Change() {
     const navigation = useNavigation();
     const changeNumber = ()=>{
       setIsLoading(true)
-        fetch("http://36c1-95-187-176-133.ngrok.io/update",{
+        fetch("http://a423-151-255-138-72.ngrok.io/update",{
           method:"POST",
           headers:{
             'Content-Type' :'application/json'
