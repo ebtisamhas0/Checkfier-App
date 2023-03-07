@@ -40,12 +40,13 @@ export default function Signup() {
   return (
      <View style={styles.container}>
       <Image
-       source={require('../assets/logo.jpg')}
+       source={require('../assets/logo.png')}  //changed the extension of the image
        style={styles.img}
+       //changed the text down in welcoming and the arrow color
        ></Image>
-       <Text style={styles.text1} >Welcome To Gamifier CheckIn</Text>
-       <Text style={styles.text2}> Type your number and become our guest!</Text>
-       <ActivityIndicator size={'large'} color='#FBBD0A' animating={isLoading}/>
+       <Text style={styles.text1} >Welcome To Golden Brown CheckIn</Text>  
+       <Text style={styles.text2}> Type your number to become our guest!</Text>
+       <ActivityIndicator size={'large'} color='#ffffff' animating={isLoading}/>
 
      <TextInput style={styles.inputBox}
        placeholder="  +966"
@@ -53,7 +54,7 @@ export default function Signup() {
      />
      
      <TouchableOpacity onPress={() => submitData()}>
-     <EvilIcons name='arrow-right' size={65} color='#FBBD0A'></EvilIcons>
+     <EvilIcons name='arrow-right' size={65} color='#ffffff'></EvilIcons>
      
      </TouchableOpacity>
 
@@ -71,14 +72,14 @@ export default function Signup() {
 const styles = StyleSheet.create({ 
     container: {
       flex:1,
-      backgroundColor:'#8E6FB2',
+      backgroundColor:'#342802',   //changed the color
       alignItems: 'center',
       
         } ,
     img: {
       marginTop:150,
-      height: 120,
-      width:120,
+      height: 150,   //changed the size
+      width:150,
       marginBottom:50,
         },
     text1: {
