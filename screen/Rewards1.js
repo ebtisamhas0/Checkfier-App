@@ -22,15 +22,15 @@ export default function Rewards1() {
             <View style={styles.navContainer}>
                <View style={styles.navBar} >
                <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.iconBehave} >
-               <Ionicons name="home-outline" size={35} />
+               <Ionicons name="home-outline" size={35} color={'#FFFCF1'} />
                </TouchableOpacity>
                
                <TouchableOpacity >
-               <Ionicons name="gift-outline" size={35} onPress={() => navigation.navigate('Rewards2')}/>
+               <Ionicons name="gift-outline" size={35} color={'#FFFCF1'} onPress={() => navigation.navigate('Rewards2')}/>
                </TouchableOpacity>
 
                <TouchableOpacity >
-               <Ionicons name="settings-outline" size={35}onPress={() => navigation.navigate('Setting')} />
+               <Ionicons name="settings-outline" size={35} color={'#FFFCF1'} onPress={() => navigation.navigate('Setting')} />
                </TouchableOpacity>
                </View>
             </View>
@@ -73,8 +73,7 @@ const styles = StyleSheet.create({
     },
     navBar: {
         flexDirection: 'row',
-        backgroundColor:'#eee',
-        opacity: 0.3,
+        backgroundColor:'rgba(238,238,238,0.3)',
         width: '95%',
         height: 50,
         justifyContent: 'space-evenly',

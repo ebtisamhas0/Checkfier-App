@@ -11,7 +11,7 @@ export default function Change() {
     const navigation = useNavigation();
     const changeNumber = ()=>{
       setIsLoading(true)
-        fetch("http://36c1-95-187-176-133.ngrok.io/update",{
+        fetch("http://05f2-151-255-138-72.ngrok.io/update",{
           method:"POST",
           headers:{
             'Content-Type' :'application/json'
@@ -36,7 +36,7 @@ export default function Change() {
     return(
         <View style={styles.container}>
           <View style={styles.box}>
-            <Text style={{color:'#8E6FB2',marginBottom:40,fontSize:22}}>Enter new number:</Text>
+            <Text style={{color:'#342802',marginBottom:40,fontSize:22}}>Enter new number:</Text>
             <TextInput style={styles.inputBox}
             placeholder="  +966"
             onChangeText={phone => setPhone({phone})}
@@ -47,7 +47,10 @@ export default function Change() {
             <EvilIcons name='arrow-right' size={55} color='#FBBD0A'></EvilIcons>
           
             </TouchableOpacity>
-            </View>
+            <TouchableOpacity style={styles.arrow} onPress={()=>{navigation.navigate('Setting')}}>
+      <Ionicons name='arrow-back-outline' size={30} color={'#FBBD0A'} ></Ionicons>    
+      </TouchableOpacity>
+        </View>
         </View>
 
     )
@@ -62,7 +65,7 @@ const styles = StyleSheet.create({
         justifyContent:'center'
     },
     box: {
-        backgroundColor: '#fff',
+        backgroundColor: '#FFFCF1',
         height:480,
         width:370,
         borderRadius:15,
@@ -76,7 +79,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#ccc',
         opacity:0.8,
         borderRadius:8,
-        marginBottom: 50,
+        marginBottom: 30,
         padding:3,
       }  ,
+    arrow: {
+      display:'flex',
+      marginRight: 250,
+      bottom: -60
+      }
 })

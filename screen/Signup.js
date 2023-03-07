@@ -12,7 +12,7 @@ export default function Signup() {
   
    const submitData = ()=>{
     setIsLoading(true)
-    fetch("http://da2b-95-187-176-133.ngrok.io/send-data",{
+    fetch("http://9b5c-151-255-138-72.ngrok.io/send-data",{
       method:"POST",
       headers:{
         'Content-Type' :'application/json'
@@ -54,7 +54,7 @@ export default function Signup() {
      />
      
      <TouchableOpacity onPress={() => submitData()}>
-     <EvilIcons name='arrow-right' size={65} color='#ffffff'></EvilIcons>
+     <EvilIcons name='arrow-right' size={65} color='#FFFCF1'></EvilIcons>
      
      </TouchableOpacity>
 
@@ -91,13 +91,13 @@ const styles = StyleSheet.create({
       color: '#ffffff',
       opacity: 0.3,
       fontSize: 20,
-      marginBottom:100,
+      marginBottom:70,
      
     } ,  
     inputBox: {
       height:44,
       width:294,
-      backgroundColor: '#fff',
+      backgroundColor: '#FFFCF1',
       borderRadius:8,
       marginBottom: 40,
       padding:3

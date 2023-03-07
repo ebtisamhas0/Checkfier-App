@@ -13,17 +13,15 @@ export default function Rewards3() {
         <Image
         style={styles.img}
         source={require('../assets/coin.png')}/>
+        <Text style={{color:'#483307',fontSize:20, marginTop:10,marginLeft:10}} >2500</Text>
       </View>
-      <LinearGradient
-       colors={['#9074B0', '#78599C']}
-       style={[styles.offers]}>
-      </LinearGradient>
-      
+      <View style={[styles.offers]}>
       <Image
-        source={require('../assets/product2.png')}
-        style={styles.img3}
-        ></Image>
-
+      source={require('../assets/Golden_Brown-02.webp')}
+      style={{height:238, width:380, borderRadius:20}}
+    />
+      </View>
+  
       <TouchableOpacity onPress={() => navigation.navigate('Rewards2')}>
        <Text style={styles.walletText}>Reward Wallet</Text>
        <View style={{height:1,width:170,backgroundColor:'#CCC',top:150,left:-85}}></View>
@@ -39,7 +37,7 @@ export default function Rewards3() {
         <View style={styles.unlocked}>
         <Ionicons name="lock-open-outline" size={35} color={"#A53737"}/>
           <Text style={styles.txt2}>Copoun unlocked</Text>
-          <Text style={{color:"#fff",fontSize:16,borderColor:'#fff',borderWidth:1,padding:5}}>Redeem for 300</Text>
+          <Text style={{color:'#483307',fontSize:16,borderColor:'#483307',borderWidth:1,padding:5, borderRadius:15}}>Redeem for 300</Text>
 
         </View>
         <View style={styles.lockedHover}>
@@ -58,15 +56,15 @@ export default function Rewards3() {
        <View style={styles.navContainer}>
                <View style={styles.navBar} >
                <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.iconBehave} >
-               <Ionicons name="home-outline" size={35} />
+               <Ionicons name="home-outline" size={35}color={'#FFFCF1'} />
                </TouchableOpacity>
                
                <TouchableOpacity >
-               <Ionicons name="gift-outline" size={35} onPress={() => navigation.navigate('Rewards2')}/>
+               <Ionicons name="gift-outline" size={35}color={'#FFFCF1'} onPress={() => navigation.navigate('Rewards2')}/>
                </TouchableOpacity>
 
                <TouchableOpacity >
-               <Ionicons name="settings-outline" size={35} onPress={() => navigation.navigate('Setting')}/>
+               <Ionicons name="settings-outline" size={35} color={'#FFFCF1'}onPress={() => navigation.navigate('Setting')}/>
                </TouchableOpacity>
                </View>
             </View>
@@ -83,7 +81,7 @@ const styles = StyleSheet.create({
     },
     points: {
         position: 'absolute',
-        backgroundColor: '#eee',
+        backgroundColor: '#FFFCF1',
         alignItems: 'center',
         marginTop: 40,
         height: 50,
@@ -125,7 +123,7 @@ const styles = StyleSheet.create({
     padding:5,
     width:370,
     height: 70,
-    backgroundColor:'#342802' ,  //changed color
+    backgroundColor:'#FFE7CF',  //changed color
     opacity:0.8,
     borderRadius:20,
     top: 190 ,
@@ -166,7 +164,7 @@ const styles = StyleSheet.create({
         padding:5,
         width:370,
         height: 70,
-        backgroundColor:'#705910',  //changed color
+        backgroundColor:'#FFE7CF',  //changed color
         opacity:0.7,
         borderRadius:20,
         top: 200 ,
@@ -176,10 +174,10 @@ const styles = StyleSheet.create({
       },
       txt2: {
         textAlign: 'center',
-        color: '#fff',
-        fontSize: 18,
+        color: '#483307',
+        fontSize: 20,
         marginLeft:6,
-        marginRight:35
+        marginRight:28
       },
       navContainer: {
         position: 'absolute',
@@ -188,8 +186,7 @@ const styles = StyleSheet.create({
     },
     navBar: {
         flexDirection: 'row',
-        backgroundColor:'#eee',
-        opacity: 0.3,
+        backgroundColor:'rgba(238,238,238,0.3)',
         width: '95%',
         height: 50,
         justifyContent: 'space-evenly',

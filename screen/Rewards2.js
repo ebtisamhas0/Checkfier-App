@@ -1,12 +1,11 @@
 import React,{useState}  from 'react';
-import { Text, View, StyleSheet, Image, TouchableOpacity, SafeAreaView } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient'
+import { Text, View, StyleSheet, Image, TouchableOpacity, SafeAreaView,ScrollView, Dimensions } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Rewards2() {
-  const [shouldShow, setShouldShow] = useState(true);
   const navigation = useNavigation();
+
   return(
     //added an image of product named img3
     <View style={styles.container}>
@@ -14,18 +13,15 @@ export default function Rewards2() {
         <Image
         style={styles.img}
         source={require('../assets/coin.png')}/>
+        <Text style={{color:'#483307',fontSize:20, marginTop:10,marginLeft:10}} >2500</Text>
       </View>
-      <LinearGradient
-       colors={['#9074B0', '#78599C']}
-       style={[styles.offers]}>
-      </LinearGradient>
+      <View style={[styles.offers]}>
       <Image
-        source={require('../assets/product1.png')}
-        style={styles.img3}
-        ></Image>
-     
-      
-      
+      source={require('../assets/Golden_Brown-02.webp')}
+      style={{height:238, width:380, borderRadius:20}}
+    />
+      </View>
+
       <View style={styles.wallet}>
         <Text style={styles.walletText}>Reward Wallet</Text>
         <View style={{height:1,width:180,backgroundColor:'#fff',top:150}}></View>
@@ -56,15 +52,15 @@ export default function Rewards2() {
        <View style={styles.navContainer}>
                <View style={styles.navBar} >
                <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.iconBehave} >
-               <Ionicons name="home-outline" size={35} />
+               <Ionicons name="home-outline" size={35} color={'#FFFCF1'}/>
                </TouchableOpacity>
                
                <TouchableOpacity >
-               <Ionicons name="gift-outline" size={35} onPress={() => navigation.navigate('Rewards2')}/>
+               <Ionicons name="gift-outline" size={35} color={'#FFFCF1'} onPress={() => navigation.navigate('Rewards2')}/>
                </TouchableOpacity>
 
                <TouchableOpacity >
-               <Ionicons name="settings-outline" size={35} onPress={() => navigation.navigate('Setting')}/>
+               <Ionicons name="settings-outline" size={35} color={'#FFFCF1'} onPress={() => navigation.navigate('Setting')}/>
                </TouchableOpacity>
                </View>
             </View>
@@ -81,7 +77,7 @@ export default function Rewards2() {
     },
     points: {
         position: 'absolute',
-        backgroundColor: '#eee',
+        backgroundColor: '#FFFCF1',
         alignItems: 'center',
         marginTop: 45,
         height: 50,
@@ -113,14 +109,14 @@ export default function Rewards2() {
         position:'absolute',
         top:120,
         fontSize: 20,
-        color:'#fff',
+        color:'#FFFCF1',
         left:25,
      
     },
     copoun1: {
       width:380,
       height: 170,
-      backgroundColor:'#ffffff' ,  //changed color
+      backgroundColor:'#FFE7CF' ,  //changed color
       opacity:0.8,
       borderRadius:20,
       top: 170 ,
@@ -135,14 +131,14 @@ export default function Rewards2() {
     },
     txt2: {
       textAlign: 'center',
-      color: '#fff',
-      fontSize: 20,
+      color: '#483307',
+      fontSize: 22,
       
     },
     copoun2: {
       width:380,
       height: 170,
-      backgroundColor:'#ffffff',  //changed color
+      backgroundColor:'#FFE7CF',  //changed color
       opacity:0.8,
       borderRadius:20,
       top: 200 ,
@@ -167,13 +163,30 @@ export default function Rewards2() {
   },
   navBar: {
       flexDirection: 'row',
-      backgroundColor:'#eee',
-      opacity: 0.3,
+      backgroundColor:'rgba(238,238,238,0.3)',
       width: '95%',
       height: 50,
       justifyContent: 'space-evenly',
       alignItems: 'center',
       borderRadius: 30
+  },
+  wrap: {
+    width:380,
+    height:280 
+  },
+  wrapDot: {
+    position: 'absolute',
+    bottom: 0,
+    flexDirection: 'row',
+    alignSelf: 'center'
+  },
+  dotActive: {
+    margin: 3,
+    color: '#ccc'
+  },
+  dot: {
+    margin: 3,
+    color: '#fff'
   }
  })
  
