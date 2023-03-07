@@ -50,7 +50,7 @@ export default function Home() {
 const styles = StyleSheet.create({ 
   container: {
     flex:1,
-    backgroundColor:'#8E6FB2',
+    backgroundColor:'#342802',  //changed the color
     alignItems: 'center',
     justifyContent: 'center',
     padding:0
@@ -69,10 +69,11 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     alignItems:'center',
     borderRadius:25,
+    backgroundColor: '#E4DABB',  // added color to open button
 
   },
   text1: {
     fontSize: 18,
-    color: '#8E6FB2'
+    color: '#705910'
   }
  }); 
