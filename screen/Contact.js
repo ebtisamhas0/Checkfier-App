@@ -20,10 +20,10 @@ export default function Contact() {
         <Text style={styles.txt2}>When you get points, you can easily redeem them for coupons and special offers, or get free products</Text>
         <View style={{height:1, width:350, backgroundColor:'#fff', opacity:0.5}}></View>
         <Text style={styles.txt1}>Will I lose my points when I change my phone number?</Text>
-        <Text style={styles.txt2}>No, your points will be linked to your new number</Text>
+        <Text style={styles.txt2}>No, your points will be linked to your new phone number</Text>
         <View style={{height:1, width:350, backgroundColor:'#fff', opacity:0.5}}></View>
         <Text style={styles.txt1}>Contact us for more help</Text>
-        <Text style={styles.txt2}>email: checkfier@gmail.com</Text>
+        <Text style={styles.txt2}> goldenbrown@gmail.com</Text>
 
 
 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     container: {
         flex:1,
         alignItems:'center',
-        backgroundColor:'#8E6FB2',
+        backgroundColor:'#342802',   //changed the color
         alignItems:'center',
     },
     content: {
