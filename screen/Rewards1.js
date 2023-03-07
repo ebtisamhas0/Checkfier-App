@@ -11,9 +11,9 @@ export default function Rewards1() {
             <Image
                 style={styles.img}
                 source={require('../assets/rewards1.png')} />
-
+            
             <Text style={styles.text1}>
-                With Gamifier you can earn rewards from anywhere at anytime!
+                With Golden Brown CheckIn you can earn rewards from any store at anytime!
             </Text>
             <Image
             style={styles.img2}
@@ -42,7 +42,7 @@ export default function Rewards1() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#8E6FB2',
+        backgroundColor: '#342802',  //changed the color
         alignItems: 'center',
         justifyContent: 'center',
         padding: 12
