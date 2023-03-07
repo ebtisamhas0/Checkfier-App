@@ -56,7 +56,7 @@ export default function Change() {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        backgroundColor: '#8E6FB2', 
+        backgroundColor: '#342802',  //changed the color
         alignItems: 'center',
         flexDirection:'column',
         justifyContent:'center'
