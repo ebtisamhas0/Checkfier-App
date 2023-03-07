@@ -9,13 +9,13 @@ export default function About() {
     <View style={styles.container}>
         <View style={styles.box}>
        <Image
-       source={require('../assets/logo.jpg')}
+       source={require('../assets/logo.png')}
        style={styles.img}
        ></Image>
      <View style={{width:290, backgroundColor:'#ccc',opacity:0.3,height:3}}></View>
 
        <Text style={styles.heading2}>
-       checkfier is a reward system web-app you can easily sign up through phone number and easily track the point, rewards and redeems.
+       Golden Brown is a reward system web-app where you can easily sign up through phone number and easily track your point, rewards and redeems.
         </Text> 
         <View style={{top:150}}>
          <TouchableOpacity onPress={()=>{navigation.navigate('Setting')}}>
@@ -30,7 +30,7 @@ export default function About() {
  const styles = StyleSheet.create({
     container: {
         flex:1,
-        backgroundColor: '#8E6FB2', 
+        backgroundColor: '#342802',   //changed the color
        
         alignItems:'center',
         justifyContent:'center'
@@ -50,7 +50,7 @@ export default function About() {
       
       heading2: {
         textAlign: 'left',
-        color:'#8E6FB2',
+        color:'#342802',
         fontSize: 22,
         top: 50,
         width: 280
