@@ -7,6 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 export default function Rewards3() {
   const navigation = useNavigation();
   return(
+    //added an image of product named img3
     <View style={styles.container}>
       <View style={styles.points}>
         <Image
@@ -16,8 +17,13 @@ export default function Rewards3() {
       <LinearGradient
        colors={['#9074B0', '#78599C']}
        style={[styles.offers]}>
-
       </LinearGradient>
+      
+      <Image
+        source={require('../assets/product2.png')}
+        style={styles.img3}
+        ></Image>
+
       <TouchableOpacity onPress={() => navigation.navigate('Rewards2')}>
        <Text style={styles.walletText}>Reward Wallet</Text>
        <View style={{height:1,width:170,backgroundColor:'#CCC',top:150,left:-85}}></View>
@@ -42,7 +48,7 @@ export default function Rewards3() {
        <View style={styles.locked}>
        <Ionicons name="lock-closed-outline" size={35} color={"#A53737"} />
 
-        <Text style={styles.txt2}>Locked Redeem this ar 1000 pts</Text>
+        <Text style={styles.txt2}>Locked Redeem this at 1000 pts</Text>
        </View>
 
        </View>
@@ -72,7 +78,7 @@ export default function Rewards3() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#8E6FB2', 
+        backgroundColor: '#342802',    //changed the color
         alignItems: 'center',
     },
     points: {
@@ -91,7 +97,12 @@ const styles = StyleSheet.create({
         width: 380,
         top:100,
         borderRadius: 20
-
+    },
+    //image of product style
+    img3: {
+      height: 150,
+        width: 280,
+        top:100,  
     },
     img: {
       position: 'absolute',
@@ -114,7 +125,7 @@ const styles = StyleSheet.create({
     padding:5,
     width:370,
     height: 70,
-    backgroundColor:'#9074B0' ,
+    backgroundColor:'#342802' ,  //changed color
     opacity:0.8,
     borderRadius:20,
     top: 190 ,
@@ -126,7 +137,7 @@ const styles = StyleSheet.create({
     width:370,
     height:70,
     borderRadius:20,
-    backgroundColor:'#FBBD0A',
+    backgroundColor:'#342802',
     opacity:0.3,
     top:185,
     alignItems:'center',
@@ -144,7 +155,7 @@ const styles = StyleSheet.create({
         width:370,
         height:70,
         borderRadius:20,
-        backgroundColor:'#FBBD0A',
+        backgroundColor:'#342802',
         opacity:0.2,
         top:200,
         alignItems:'center',
@@ -155,7 +166,7 @@ const styles = StyleSheet.create({
         padding:5,
         width:370,
         height: 70,
-        backgroundColor:'#9074B0',
+        backgroundColor:'#705910',  //changed color
         opacity:0.7,
         borderRadius:20,
         top: 200 ,
