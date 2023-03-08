@@ -3,7 +3,6 @@ import { Text, View, StyleSheet, Image, TouchableOpacity,TextInput,ActivityIndic
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import EvilIcons from '@expo/vector-icons/EvilIcons';
-
 export default function Change() { 
     const [phone, setPhone] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -11,11 +10,7 @@ export default function Change() {
     const navigation = useNavigation();
     const changeNumber = ()=>{
       setIsLoading(true)
-<<<<<<< HEAD
-        fetch("http://05f2-151-255-138-72.ngrok.io/update",{
-=======
-        fetch("http://a423-151-255-138-72.ngrok.io/update",{
->>>>>>> fa38f4dd687d9715069687853413479e1dd8cc8c
+        fetch("https://eeef-151-255-138-72.eu.ngrok.io/update",{
           method:"POST",
           headers:{
             'Content-Type' :'application/json'
